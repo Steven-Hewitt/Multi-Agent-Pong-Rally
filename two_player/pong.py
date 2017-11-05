@@ -70,7 +70,7 @@ class PongGame(Env):
 			self.ball = PongObject([WIDTH/2,HEIGHT/2], [-horz, vert])
 		else:
 			self.ball = PongObject([WIDTH/2,HEIGHT/2], [horz, vert])
-	
+		return self._step([0,0])[0]
 	
 	#draw function of canvas
 	def _step(self, action):
